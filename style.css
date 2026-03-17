@@ -1,0 +1,93 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:linear-gradient(120deg,#74ebd5,#ACB6E5);
+}
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+img{
+max-width:100%;
+border-radius:8px;
+margin-top:10px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:10px;
+}
+/* Grid layout for subject cards */
+
+.container{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap:20px;
+width:85%;
+margin:auto;
+padding:20px;
+}
+.card a{
+display:inline-block;
+margin-top:10px;
+padding:8px 15px;
+background:#007BFF;
+color:white;
+border-radius:5px;
+text-decoration:none;
+}
+
+.card a:hover{
+background:#0056b3;
+}
+
+.search-box{
+text-align:center;
+margin:20px;
+}
+
+.search-box input{
+width:60%;
+padding:10px;
+font-size:16px;
+border-radius:5px;
+border:1px solid #ccc;
+}

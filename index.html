@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Study Hub | Harshdeep Learning</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:linear-gradient(120deg,#74ebd5,#ACB6E5);
+}
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Harshdeep Learning</h1>
+<p>Class 10 Study Notes Website</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="math-tips.html">Math</a>
+<a href="science.html">Science</a>
+<a href="english.html">English</a>
+<a href="social.html">Social Science</a>
+<a href="computer.html">Computer</a>
+</nav>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search subjects or chapters..." onkeyup="searchFunction()">
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Welcome</h2>
+<p>This website provides simple notes and guides for Class 10 students.</p>
+</div>
+
+<div class="card">
+<h2>Mathematics</h2>
+<p>Complete Class 10 math chapters including algebra, trigonometry, and statistics.</p>
+<a href="math-.html">Open Math Notes</a>
+</div>
+
+<div class="card">
+<h2>Science</h2>
+<p>Learn physics, chemistry, and biology concepts with simple explanations.</p>
+<a href="science.html">Open Science Notes</a>
+</div>
+
+<div class="card">
+<h2>English</h2>
+<p>Grammar lessons, writing skills, and literature explanations.</p>
+<a href="english.html">Open English Notes</a>
+</div>
+
+<div class="card">
+<h2>Social Science</h2>
+<p>Study history, geography, civics, and economics for Class 10.</p>
+<a href="social.html">Open Social Science Notes</a>
+</div>
+
+<div class="card">
+<h2>Computer</h2>
+<p>Learn computer basics, internet, programming, and technology concepts.</p>
+<a href="computer.html">Open Computer Notes</a>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Subjects</h2>
+
+<ul>
+<li><a href="math-tips.html">Mathematics Notes</a></li>
+<li><a href="science.html">Science Notes</a></li>
+<li><a href="english.html">English Notes</a></li>
+<li><a href="social.html">Social Science Notes</a></li>
+<li><a href="computer.html">Computer Notes</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Harshdeep Learning</p>
+</footer>
+
+</body>
+
+<script>
+
+function searchFunction() {
+let input = document.getElementById("searchInput");
+let filter = input.value.toLowerCase();
+let cards = document.getElementsByClassName("card");
+
+for (let i = 0; i < cards.length; i++) {
+let text = cards[i].innerText.toLowerCase();
+
+if (text.includes(filter)) {
+cards[i].style.display = "";
+} else {
+cards[i].style.display = "none";
+}
+}
+
+}
+
+</script>
+
+</html>
